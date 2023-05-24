@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:expense_tracker/models/expense.dart';
 
 class ExpenseItem extends StatelessWidget {
-  ExpenseItem(this.expense, {super.key});
+  const ExpenseItem(this.expense, {super.key});
 
   final Expense expense;
 
@@ -14,10 +14,14 @@ class ExpenseItem extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.only(bottom: 8.0),
-              child: Text(expense.title),
+              child: Text(
+                expense.title,
+                style: Theme.of(context).textTheme.titleLarge,
+              ),
             ),
             Row(
               children: [
