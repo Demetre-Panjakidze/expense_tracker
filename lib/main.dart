@@ -12,11 +12,6 @@ ColorScheme kDarkColorScheme = ColorScheme.fromSeed(
 );
 
 void main() {
-  // WidgetsFlutterBinding.ensureInitialized();
-  // SystemChrome.setPreferredOrientations([
-  //   DeviceOrientation.portraitUp,
-  // ]).then(
-  //   (_) {
   runApp(
     MaterialApp(
       darkTheme: ThemeData.dark().copyWith(
@@ -61,5 +56,3 @@ void main() {
     ),
   );
 }
-  // );
-// }
