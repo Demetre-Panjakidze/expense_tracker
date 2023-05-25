@@ -31,7 +31,7 @@ class ExpenseItem extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(right: 8.0),
-                      child: Icon(CategoryIcons[expense.category]),
+                      child: Icon(categoryIcons[expense.category]),
                     ),
                     Text(expense.formattedDate),
                   ],
